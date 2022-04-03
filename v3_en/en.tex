@@ -1,0 +1,187 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'blak'
+%\usepackage{tgpagella}
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% adjust the page margins
+\usepackage[scale=0.86]{geometry}
+\geometry{top=1.2cm, bottom=1.0cm}
+\usepackage{fontspec}
+\usepackage{xunicode}
+% \usepackage{xeCJK}
+%\setmainfont{Minion Pro}
+%\setsansfont{Myriad Pro}
+\setmonofont{Courier New}
+%\setCJKmainfont{SimSun}
+% \setCJKsansfont{KaiTi}
+% \setCJKmonofont{SimHei}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{}{Hoppe Wang}                               % optional, remove / comment the line if not wanted
+%\address{Burnaby, BC, CA}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\vspace{1em}
+\phone[mobile]{(+86) 18679350152}                   % optional, remove / comment the line if not wanted            % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{wanghp000@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{github.com/wanghoppe}                         % optional, remove / comment the line if not wanted
+% \homepage{https://www.linkedin.com/in/hoppe-wang-b033581a0/}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%]\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+
+\begin{document}
+
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+% \small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+\vspace{-3.25em}
+\section{\bfseries{Technical Skills}}
+
+\vspace{2pt}
+
+\begin{itemize}
+
+\item{\textbf{Programming Language}: Javascript, Typescript, Python, Java, SQL, Dart, HTML, CSS }
+\vspace{2pt}
+\item{\textbf{Web}: Vue, React (Native), Lit, Webpack, Rollup, Node.js, Koa.js, Flutter, Django }
+\vspace{2pt}
+\item{\textbf{Big Data/ Data Science}: Hadoop, Spark, Tensorflow, Pytorch, Keras, Pandas.}
+\end{itemize}
+
+\section{Work Experience}
+
+\begin{itemize}
+\vspace{2pt}
+
+\item{\cventry{Sept 2020 - Present}{Frontend Developer}{Bytedance}{Shanghai, China}{}{}
+
+\begin{itemize}
+\item{Developed the web frontend and the BFF service of Bytedance Monetization Data Center, worked on multiple projects which include intelligent decision-making, data asset management, and operating center, using the technical stack of Vue2, Composition API, Typescript, Koa.js}
+% \vspace{2pt}
+% \item{Supervised the Monetization Platform Ads-diagnose project in the same team,
+%  which use React + Mobx, by participating in relevent requirements review, technical
+%  design, and code reivew to ensure the overall quality}
+
+\end{itemize}}
+
+\vspace{1em}
+
+\item{\cventry{May 2019 - Dec 2019}{Software Engineer, Data Aggregation Co-op}{Realtor.com}{Richmond, BC, Canada}{}{}
+
+\begin{itemize}
+\item{Worked collaboratively in an Agile/Scrum team to maintain our listing data pipeline and create real estate specific data transformation rule with Java and Javascript.}
+\vspace{2pt}
+\item{Helped our team migrate special datasources to the new data pipeline by writing python scripts to provide migration metrics and automation.}
+
+\end{itemize}}
+
+\end{itemize}
+
+\section{Selected Projects}
+\vspace{2pt}
+\begin{itemize}
+
+\item{
+  \cventry{Sept 2020 - Present}{Bytedance}{Monetization Data Center}{}{}{}
+
+  \begin{itemize}
+    \item{Bytedance Monetization Data Center is an internal-faced platform, which aims to
+      empower different monetization business lines using Big Data by creating end-to-end
+      data solutions and providing high-quality data applications and services.
+    }
+    \vspace{2pt}
+    \item{Designed a solution for outputting Data Center's frontend capabilities to third-party
+      systems using Lit and web component to encapsulate underlying logic and support
+      cross-platform.}
+    \vspace{2pt}
+    \item{Maintained a set of mxGraph-based DAG (Directed Acyclic Graph) data flow
+    low-code editing system and developed a graph visualization of the services
+    topology to help developers locate unhealthy modules in a large micro-service-based system.}
+    \vspace{2pt}
+    \item{Optimized the Puppeteer screenshot service by limiting the length of the screenshot queue using Redis and managing the service logs and alarms to maintain the service stability. }
+    \vspace{2pt}
+    \item{Migrated and deployed the Data Center overseas's front-end and BFF services to meet the company's data compliance requirements.}
+  \end{itemize}
+}
+
+\vspace{0.75em}
+
+\item{
+  \cventry{Sept 2019 - Jan 2020}{Self-directed}{Mobile Music App Development}{}{}{}
+
+  \begin{itemize}
+  \item{Built a cloud powered music App which allows users to listen to Youtube music offline.}
+  \vspace{2pt}
+  \item{Powered by React Native, can be built to run on both iOS and Android devices.}
+  \vspace{2pt}
+  \item{Deployed the back end service with AWS Lambda and API Gateway to go completely serverless with high scalability and simplicity.}
+  \end{itemize}
+}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{2pt}
+
+\begin{itemize}
+
+
+\item{\cventry{Sept 2018 - Jun 2020}{MSc in Computer Science (Big Data) }{Simon Fraser University}{Burnaby, BC, Canada}{}{GPA: 3.78/ 4.33}}
+\vspace{2pt}
+
+\item{\cventry{Sept 2014 - Jun 2018}{Bachelor of Energy and Power Engineering}{Xi’an Jiaotong University}{Xi’an, China}{}{GPA: 84/ 100}}
+
+\end{itemize}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+%\end{CJK*}
+\end{document}
+%% end of file `template.tex'.

@@ -1,0 +1,161 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'blak'
+%\usepackage{tgpagella}
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+% adjust the page margins
+\usepackage[scale=0.86]{geometry}
+\geometry{top=1.8cm, bottom=1.8cm}
+\usepackage{fontspec}
+\usepackage{xunicode}
+\usepackage{xeCJK}
+\setmainfont{Courier New}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{}{　　　　　王　昊　鹏　　　　　　　　　
+}                              % optional, remove / comment the line if not wanted
+%\address{Burnaby, BC, CA}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{(+1) 236-862-2640}                   % optional, remove / comment the line if not wanted            % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{hwa125@sfu.a}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/wanghoppe}                         % optional, remove / comment the line if not wanted
+\homepage{https://www.linkedin.com/in/hoppe-wang-b033581a0/}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%]\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+% \small{Undergraduate electrical and electronic engineer completing the final year of a master's degree. Passionate about science, with strong technical, business, and interpersonal skills for working in a team and successfully completing a project.}
+\vspace{-3.5em}
+\section{专业技能}
+
+\vspace{2pt}
+
+\begin{itemize}
+
+\item{\textbf{编程语言}: Python, Javascript, Java, SQL, Dart, HTML, C++, C, R。}
+\vspace{2pt}
+\item{\textbf{大数据/ 数据科学}: Hadoop, Spark, Cassandra, Tensorflow, Pytorch, Keras, Scikit-Learn, Pandas。}
+\vspace{2pt}
+\item{\textbf{开发工具/ 框架}: AWS, Git, Kubernetes, Node.js, Django, Flutter, React (Native), Android。}
+\end{itemize}
+
+\section{工作经历	}
+
+\begin{itemize}
+\vspace{2pt}
+
+\item{\cventry{2019年5月 - 2019年12月}{\small{软件工程师（实习生）}}{\large{Realtor.com}}{加拿大，温哥华}{}{}
+
+\begin{itemize}
+\item{在Agile团队中用Java和Javascript进行房地产相关信息处理的ETL开发和维护公司的数据管道。}
+\vspace{2pt}
+\item{负责解决客户和下游的数据相关问题，范围包括数据多样性，数据准确度，和数据管道的处理性能。}
+\vspace{2pt}
+\item{参与了迁移部分数据源到基于AWS（亚马逊云服务）的新数据管道的项目，开发Python脚本为迁移提供自动化和相关指标的计算方法。}
+\vspace{2pt}
+\item{结合AWS Lambda和Google表格API，从MySQL数据库中读取数据并生成一个可以自动更新的报告，用来监视所有数据源的状态。}
+
+\end{itemize}}
+\end{itemize}
+
+\section{相关项目}
+\vspace{2pt}
+\begin{itemize}
+
+\item{\cventry{2019年9月 - 2020年2月}{\small{个人项目}}{移动端应用开发}{}{}{}
+
+\begin{itemize}
+\item{开发了一个云驱动的移动端音乐应用，可以让用户下载和离线播放YouTube音乐。}
+\vspace{2pt}
+\item{基于React Native框架，采用React Hook构建组件和管理状态，运用SQLite数据库存取用户端数据。}
+\vspace{2pt}
+\item{后端API部署采用了AWS Lambda和AWS API Gateway，实现了无服务器计算，架构简单并具有高度的扩展性。}
+\end{itemize}}
+
+\vspace{1em}
+
+\item{\cventry{2019年4月}{\small{＂大数据编程＂课程项目}}{加密货币价格实时预测系统}{西蒙弗雷泽大学(Simon Fraser University)}{}{}
+
+\begin{itemize}
+\item{训练基于LSTM（长短期记忆单元）的递归神经网络来预测比特币的价格，其中特征采集运用到了相关社交网络的历史数据和基于新闻的情感分析。}
+\vspace{2pt}
+\item{搭建了一个比特币价格实时预测系统，其中包括数据流的采集与处理，模型预测，RabbitMQ发布消息队列和Node.js服务器发送事件，最终将模型的预测结果发布到 \textcolor{cyan}{\href{http://crypto-host.s3-website-us-west-2.amazonaws.com}{React前端}}。}
+\end{itemize}}
+
+\vspace{1em}
+\item{\cventry{2018年12月}{\small{＂机器学习＂课程项目}}{低分辨率暗图像增强}{西蒙弗雷泽大学(Simon Fraser University)}{}{}
+
+\begin{itemize}
+\item{结合\textcolor{cyan}{\href{https://arxiv.org/abs/1805.01934}{ Learning-to-See-in-Dark }}模型和\textcolor{cyan}{\href{https://arxiv.org/abs/1609.04802}{ SRGAN }}(超分辨率对抗神经网络)搭建卷积对抗神经网路对低分辨率暗图像实现了4倍的超分辨率，去噪，去模糊和增强。}
+\vspace{2pt}
+\item{输入图像可以是RGB格式，解决了Learning-to-See-in-Dark模型只能用相机生成的RAW格式图片作为输入的局限性。}
+\end{itemize}}
+
+\end{itemize}
+
+\section{教育经历}
+
+\vspace{2pt}
+
+\begin{itemize}
+
+
+\item{\cventry{2018年9月 - 2020年5月}{计算机科学（大数据）　硕士}{西蒙弗雷泽大学(Simon Fraser University)}{加拿大，温哥华}{}{GPA: 3.78/ 4.33}}
+\vspace{2pt}
+
+\item{\cventry{2014年9月 - 2018年6月}{能源与动力工程　本科}{西安交通大学}{西安}{}{GPA: 84/ 100}}
+
+\end{itemize}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+\end{document}
+%% end of file `template.tex'.
